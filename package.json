@@ -6,11 +6,13 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "start": "npm run develop",
-    "test": "eslint \"src/**/*.*\" && tsc"
+    "test": "eslint src --ext .ts,.tsx && tsc"
   },
   "dependencies": {
     "gatsby": "^2.20.25",
+    "gatsby-plugin-sass": "^2.2.3",
     "gatsby-plugin-typescript": "^2.3.3",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "ts-node": "^8.8.2",
