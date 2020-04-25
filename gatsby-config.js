@@ -4,6 +4,13 @@ require("ts-node").register({ files: true });
 module.exports = {
   plugins: [
     {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        test: /\.tsx?$/,
+        stages: ["develop", "build-javascript"],
+      },
+    },
+    {
       resolve: "gatsby-plugin-sass",
       options: {
         cssLoaderOptions: {
